@@ -28,5 +28,6 @@ void calculateFrequencies(const char* sentence, int freq[]);
 void printFrequencies(int freq[]);
 void buildDataFromFrequencies(int freq[], char data[], int dataFreq[], int* size);
 void huffmanCodes(char data[], int freq[], int size);
+void run_huffman();
 
 #endif // HUFFMAN_H
