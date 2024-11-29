@@ -67,7 +67,7 @@ for file in "$CALGARY_DIR"/*; do
         calculate_stats "$file" "$CALGARY_DIR/$base_name.bwt_mtf_huf" "BWT + MTF + Huffman"
     fi
 done
-# Cleanup: Remove generated files from the Calgary folder
+# Cleanup: Remove all files with a '.' in the Calgary folder
 echo "Cleaning up generated files..."
-find "$CALGARY_DIR" -type f \( -name "*.rle" -o -name "*.ari" -o -name "*.huf" -o -name "*.bwt" -o -name "*.mtf" \) -exec rm {} \;
+find "$CALGARY_DIR" -type f -name "*.*" -exec rm {} \;
 echo "Cleanup complete!"
