@@ -1,3 +1,8 @@
+import pandas as pd
+from io import StringIO
+
+# Input the data as a string
+data = """
 File,Algorithm Sequence,Input Size (bytes),Output Size (bytes),Compression Ratio (%)
 Capital-Volume-I,RLE, 2077155, 2074398,1.00
 Capital-Volume-I,ARI, 2077155, 1162932,45.00
@@ -41,12 +46,12 @@ book2,Huffman,  610856,  369324,40.00
 book2,BWT + MTF + RLE,  610856,  369744,40.00
 book2,BWT + MTF + ARI,  610856,  190860,69.00
 book2,BWT + MTF + Huffman,  610856,  198325,68.00
-huffman_good,RLE,      37,      16,57.00
-huffman_good,ARI,      37,      33,11.00
-huffman_good,Huffman,      37,    1038,-2705.00
-huffman_good,BWT + MTF + RLE,      37,      36,3.00
-huffman_good,BWT + MTF + ARI,      37,      41,-10.00
-huffman_good,BWT + MTF + Huffman,      37,    1039,-2708.00
+huffman_good,RLE,      76,      44,43.00
+huffman_good,ARI,      76,      54,29.00
+huffman_good,Huffman,      76,    1047,-1277.00
+huffman_good,BWT + MTF + RLE,      76,      38,50.00
+huffman_good,BWT + MTF + ARI,      76,      52,32.00
+huffman_good,BWT + MTF + Huffman,      76,    1044,-1273.00
 paper1,RLE,   53161,   52925,1.00
 paper1,ARI,   53161,   33120,38.00
 paper1,Huffman,   53161,   34361,36.00
@@ -89,3 +94,17 @@ rle_good,Huffman,     185,    1105,-497.00
 rle_good,BWT + MTF + RLE,     185,      55,71.00
 rle_good,BWT + MTF + ARI,     185,      83,56.00
 rle_good,BWT + MTF + Huffman,     185,    1064,-475.00
+"""
+
+
+# Load the data into a pandas DataFrame
+df = pd.read_csv(StringIO(data))
+
+# Group by 'Algorithm Sequence' and find the best compression ratio for each category
+best_per_algorithm = df.loc[df.groupby('Algorithm Sequence')['Compression Ratio (%)'].idxmax()]
+
+# Display the best compression results
+print(best_per_algorithm)
+
+# Save the results to a CSV file (optional)
+best_per_algorithm.to_csv('best_per_algorithm.csv', index=False)

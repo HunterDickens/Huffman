@@ -1,0 +1,17 @@
+File,Algorithm Sequence,Input Size (bytes),Output Size (bytes),Compression Ratio (%)
+CCapital-Volume-I,RLE,2077155,2074398,1.0
+Capital-Volume-I,BWT + MTF + ARI,2077155,646812,69.0
+Capital-Volume-II,BWT + MTF + ARI,1286856,332646,75.0
+Capital-Volume-III,BWT + MTF + ARI,2251248,615795,73.0
+ari_good,ARI,125,69,45.0
+bib,BWT + MTF + ARI,111261,31981,72.0
+book1,BWT + MTF + ARI,768771,278301,64.0
+book2,BWT + MTF + ARI,610856,190860,69.0
+huffman_good,BWT + MTF + RLE,76,38,50.0
+paper1,BWT + MTF + ARI,53161,17981,67.0
+paper2,BWT + MTF + ARI,82199,27569,67.0
+paper3,BWT + MTF + ARI,46526,17251,63.0
+paper4,BWT + MTF + ARI,13286,5519,59.0
+paper5,BWT + MTF + ARI,11954,5082,58.0
+paper6,BWT + MTF + ARI,38105,13223,66.0
+rle_good,RLE,185,25,87.0
