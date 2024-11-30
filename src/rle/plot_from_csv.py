@@ -5,12 +5,12 @@ from io import StringIO
 # Input your data as a string
 data = """
 File,Algorithm Sequence,Input Size (bytes),Output Size (bytes),Compression Ratio (%)
-rle_good,RLE,     185,      25,87.00
-rle_good,ARI,     185,     131,30.00
-rle_good,Huffman,     185,    1105,-497.00
-rle_good,BWT + MTF + RLE,     185,      55,71.00
-rle_good,BWT + MTF + ARI,     185,      83,56.00
-rle_good,BWT + MTF + Huffman,     185,    1064,-475.00
+cat-hat,RLE,    8864,    8853,1.00
+cat-hat,ARI,    8864,    5410,39.00
+cat-hat,Huffman,    8864,    6296,29.00
+cat-hat,BWT + MTF + RLE,    8864,    5917,34.00
+cat-hat,BWT + MTF + ARI,    8864,    3466,61.00
+cat-hat,BWT + MTF + Huffman,    8864,    4334,52.00
 """
 
 # Load the data into a pandas DataFrame

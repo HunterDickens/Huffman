@@ -41,12 +41,18 @@ book2,Huffman,  610856,  369324,40.00
 book2,BWT + MTF + RLE,  610856,  369744,40.00
 book2,BWT + MTF + ARI,  610856,  190860,69.00
 book2,BWT + MTF + Huffman,  610856,  198325,68.00
-huffman_good,RLE,      37,      16,57.00
-huffman_good,ARI,      37,      33,11.00
-huffman_good,Huffman,      37,    1038,-2705.00
-huffman_good,BWT + MTF + RLE,      37,      36,3.00
-huffman_good,BWT + MTF + ARI,      37,      41,-10.00
-huffman_good,BWT + MTF + Huffman,      37,    1039,-2708.00
+cat-hat,RLE,    8864,    8853,1.00
+cat-hat,ARI,    8864,    5410,39.00
+cat-hat,Huffman,    8864,    6296,29.00
+cat-hat,BWT + MTF + RLE,    8864,    5917,34.00
+cat-hat,BWT + MTF + ARI,    8864,    3466,61.00
+cat-hat,BWT + MTF + Huffman,    8864,    4334,52.00
+huffman_good,RLE,      30,       9,70.00
+huffman_good,ARI,      30,      23,24.00
+huffman_good,Huffman,      30,    1030,-3333.00
+huffman_good,BWT + MTF + RLE,      30,      25,17.00
+huffman_good,BWT + MTF + ARI,      30,      37,-23.00
+huffman_good,BWT + MTF + Huffman,      30,    1037,-3356.00
 paper1,RLE,   53161,   52925,1.00
 paper1,ARI,   53161,   33120,38.00
 paper1,Huffman,   53161,   34361,36.00

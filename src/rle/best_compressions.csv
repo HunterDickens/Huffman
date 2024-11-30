@@ -1,5 +1,4 @@
 File,Algorithm Sequence,Input Size (bytes),Output Size (bytes),Compression Ratio (%)
-CCapital-Volume-I,RLE,2077155,2074398,1.0
 Capital-Volume-I,BWT + MTF + ARI,2077155,646812,69.0
 Capital-Volume-II,BWT + MTF + ARI,1286856,332646,75.0
 Capital-Volume-III,BWT + MTF + ARI,2251248,615795,73.0
